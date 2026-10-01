@@ -72,11 +72,10 @@
    //                             &kp LGUI &mo NAV &kp SPACE   &kp RET &mo SYM &kp RALT
             
             //TODO add ZMK studio unlock key
-            //TODO right- and left-most column keys
            
-                &none       &kp Q       &kp W        &kp E         &kp R      &kp T        &kp Y         &kp U           &kp I       &kp O  &kp P  &none
-                &none  &hm LCMD A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F      &kp G        &kp H  &hm RSHIFT J     &hm RCTRL K  &hm RALT L  &td0  &none
-                &none       &kp Z       &kp X        &kp C         &kp V      &kp B        &kp N         &kp M       &kp COMMA     &kp DOT  &kp FSLH  &none
+                &kp TAB    &kp Q       &kp W        &kp E         &kp R      &kp T        &kp Y         &kp U     &kp I        &kp O  &kp P  &none
+                &kp GRAVE  &hm LCMD A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F      &kp G        &kp H  &hm RSHIFT J     &hm RCTRL K  &hm RALT L  &td0  &kp SQT
+                &none       &kp Z       &kp X        &kp C         &kp V      &kp B        &kp N         &kp M     &kp COMMA    &kp DOT  &kp FSLH  &none
                                      &td1  &lt NAV BSPC  &kp SPACE    &kp ENTER   &lt SYM DEL  &kp BSPC
             >;
         };
@@ -90,10 +89,10 @@
    //                                             &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
      
    // TODO do I need &mo FUNC for the middle thumb button on right side? Or does &trans work, because of the conditional layers above? 
-                &none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6          &kp N7           &kp N8    &kp N9         &kp N0  &none
-                &none   &none   &none   &none   &none   &none             &none    &kp UP            &none  &kp HOME      &kp PG_UP  &none
-                &none   &none   &none   &none   &none   &none    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW   &kp END  &kp PAGE_DOWN  &none
-                       &trans  &trans  &trans            &trans  &trans           &trans
+                &none    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6          &kp N7           &kp N8    &kp N9         &kp N0  &none
+                &none    &none   &none   &none   &none   &none             &none    &kp UP            &none  &kp HOME      &kp PG_UP  &none
+                &none    &none   &none   &none   &none   &none    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW   &kp END  &kp PAGE_DOWN  &none
+                       &trans  &trans  &trans            &trans  &trans &trans
             >;
         };
 
@@ -106,7 +105,7 @@
             //                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
 
             // TODO do I need &mo FUNC for the middle thumb button on left side? Or does &trans work, because of the conditional layers above? 
-                &none   &kp EXCL     &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none
+                &none  &kp EXCL     &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none
                 &none  &kp GRAVE  &kp TILDE     &none     &none      &none    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &none
                 &none      &none      &none     &none     &none      &none    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &none
                                &trans  &trans     &trans       &trans     &trans           &trans
@@ -120,10 +119,10 @@
             //    &kp LCTRL &trans &kp F4 &kp F5 &kp F6 &kp F11   &trans       &trans      &trans       &trans &trans &trans
             //   &bt LSHFT &trans &kp F1 &kp F2 &kp F3 &kp F10   &trans       &trans      &trans       &trans &trans &trans
             //                       &kp LGUI &mo NAV &kp SPACE   &kp RET &mo SYM &kp RALT
-                &none        &kp F1        &kp F2        &kp F3      &kp F4            &kp F5        &kp F6        &kp F7        &kp F8  &kp F9  &kp F10  &none
-                &none         &none         &none    &kp C_PREV  &kp C_NEXT  &kp C_PLAY_PAUSE    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none  &kp F11  &none
-                &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT        &bt BT_CLR         &none         &none         &none   &none  &kp F12  &none
-                                     &sys_reset      &trans            &trans        &trans        &trans    &sys_reset
+                &none  &kp F1            &kp F2        &kp F3      &kp F4            &kp F5        &kp F6        &kp F7        &kp F8  &kp F9  &kp F10  &none
+                &none  &studio_unlock    &none    &kp C_PREV  &kp C_NEXT  &kp C_PLAY_PAUSE    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none  &kp F11  &none
+                &none  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT        &bt BT_CLR         &none         &none         &none   &none  &kp F12  &none
+                                         &sys_reset      &trans            &trans        &trans        &trans    &sys_reset
             >;
         };
 
