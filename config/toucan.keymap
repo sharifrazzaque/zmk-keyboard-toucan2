@@ -9,6 +9,12 @@
 #define SYM  2
 #define FUNC 3
 
+// For Mac OS:
+//    GUI   // Command
+//    ALT   // Option (Alt)
+//    CTRL  // Control
+//    SHIFT // Shift
+
 / {
 
     behaviors {
@@ -72,10 +78,10 @@
    //                             &kp LGUI &mo NAV &kp SPACE   &kp RET &mo SYM &kp RALT
             
            
-                &kp TAB    &kp Q       &kp W        &kp E         &kp R      &kp T        &kp Y         &kp U     &kp I        &kp O  &kp P  &none
-                &kp GRAVE  &hm LCMD A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F      &kp G        &kp H  &hm RSHIFT J     &hm RCTRL K  &hm RALT L  &td0  &kp SQT
-                &none       &kp Z       &kp X        &kp C         &kp V      &kp B        &kp N         &kp M     &kp COMMA    &kp DOT  &kp FSLH  &none
-                                     &td1  &lt NAV BSPC  &kp SPACE    &kp ENTER   &lt SYM DEL  &kp BSPC
+                &kp TAB    &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y     &kp U        &kp I        &kp O      &kp P     &none
+                &kp GRAVE  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F &kp G        &kp H     &hm RSHIFT J &hm RCTRL K  &hm RALT L &td0      &kp SQT
+                &none      &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N     &kp M        &kp COMMA    &kp DOT    &kp FSLH  &none
+                                                   &td1         &lt NAV BSPC &kp SPACE    &kp ENTER &lt SYM DEL  &kp BSPC
             >;
         };
 
